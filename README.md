@@ -10,3 +10,10 @@ To Do list with a timer.  But theres a catch... before you start a task, you mus
 Melissa Peng, Bryan Wong, Michael, Jenny Shih
 
 ## Timeline
+
+
+May 17, Wed : Idea is Birthed
+May 17 - 22: Design Process Underway
+May 22: Development starts
+
+June 7: MVP is created and presented
