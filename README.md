@@ -12,8 +12,14 @@ Melissa Peng, Bryan Wong, Michael, Jenny Shih
 ## Timeline
 
 
-May 17, Wed : Idea is Birthed
-May 17 - 22: Design Process Underway
-May 22: Development starts
+May 17, Wed : Idea is Birthed;
 
-June 7: MVP is created and presented
+May 17 - 22: Design Process Underway;
+
+May 22: Development starts;
+
+May 31: MVP is finalized and presented;
+
+## What the MVP includes
+
+To Do List, Timer, Task alert when timer finishes
