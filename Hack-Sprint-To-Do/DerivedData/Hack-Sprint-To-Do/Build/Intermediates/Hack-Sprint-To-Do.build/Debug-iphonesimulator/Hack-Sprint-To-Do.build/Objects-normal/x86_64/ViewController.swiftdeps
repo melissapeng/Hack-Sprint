@@ -6,54 +6,57 @@ provides-nominal:
 provides-member:
 - ["C17Hack_Sprint_To_Do14ViewController", ""]
 provides-dynamic-lookup:
-- "alert"
-- "defaults"
-- "viewDidLoad"
-- "listTV"
-- "times"
-- "items"
 - "didReceiveMemoryWarning"
-- "addItem"
+- "viewDidLoad"
 - "toMenu"
+- "items"
+- "defaults"
+- "addItem"
+- "times"
+- "listTV"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
+- "alert"
 depends-top-level:
-- "CastingPrecedence"
-- "UserDefaults"
-- !private "ItemTableViewCell"
-- "AssignmentPrecedence"
-- "UITableView"
-- !private "Array"
-- "Int"
-- !private "!="
-- !private "=="
-- !private "UIFont"
-- !private "UIAlertController"
-- !private "??"
-- !private "print"
-- "IndexPath"
-- "ViewController"
-- "UITableViewRowAction"
-- "String"
-- "UIButton"
-- !private "BooleanLiteralType"
-- !private "StringLiteralType"
-- "UITableViewCellEditingStyle"
-- "UIViewController"
-- "UITableViewDataSource"
-- !private "UIAlertAction"
-- "UITableViewDelegate"
 - "AnyObject"
+- "UITableView"
+- !private "print"
+- "UITableViewCellEditingStyle"
+- "UIButton"
+- "CastingPrecedence"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- "AssignmentPrecedence"
+- "String"
+- !private "=="
+- !private "UIAlertController"
 - "UITableViewCell"
+- "IndexPath"
+- !private "UIAlertAction"
+- !private "StringLiteralType"
+- "UserDefaults"
+- !private "UIFont"
+- !private "ItemTableViewCell"
+- !private "!="
+- !private "??"
+- !private "/"
+- "UITableViewRowAction"
+- !private "Array"
+- !private "BooleanLiteralType"
+- !private "UIColor"
+- "UIViewController"
+- "ViewController"
+- "Int"
 - "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UITableViewRowAction"]
 - ["Ps9AnyObject", "UserDefaults"]
@@ -62,7 +65,6 @@ depends-member:
 - !private ["Ps9AnyObject", "addTextField"]
 - ["Ps9AnyObject", "alert"]
 - !private ["Ps9AnyObject", "backgroundColor"]
-- !private ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "dataSource"]
 - ["Ps9AnyObject", "defaults"]
 - !private ["Ps9AnyObject", "delegate"]
@@ -70,7 +72,6 @@ depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "font"]
-- !private ["Ps9AnyObject", "green"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9AnyObject", "init"]
@@ -101,6 +102,7 @@ depends-member:
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
 - !private ["Ps9AnyObject", "set"]
 - ["Ps9AnyObject", "standard"]
+- !private ["Ps9AnyObject", "styles"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textFields"]
@@ -169,6 +171,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "itemLabel"]
 - !private ["PSo15CALayerDelegate", "placeholder"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "styles"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "timeLabel"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -183,6 +186,7 @@ depends-member:
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIAlertAction"]
 - !private ["Ps7CVarArg", "UIAlertController"]
+- !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UITableViewRowAction"]
 - ["Ps7CVarArg", "UserDefaults"]
@@ -194,7 +198,6 @@ depends-member:
 - ["Ps7CVarArg", "alert"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "backgroundColor"]
-- !private ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dataSource"]
 - ["Ps7CVarArg", "defaults"]
@@ -203,7 +206,6 @@ depends-member:
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "font"]
-- !private ["Ps7CVarArg", "green"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps7CVarArg", "init"]
@@ -235,6 +237,7 @@ depends-member:
 - ["Ps7CVarArg", "sectionIndexTitlesForTableView"]
 - !private ["Ps7CVarArg", "set"]
 - ["Ps7CVarArg", "standard"]
+- !private ["Ps7CVarArg", "styles"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
@@ -275,6 +278,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewRowAction"]
 - ["Ps28CustomDebugStringConvertible", "UserDefaults"]
@@ -285,7 +289,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "alert"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
-- !private ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - ["Ps28CustomDebugStringConvertible", "defaults"]
@@ -294,7 +297,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
-- !private ["Ps28CustomDebugStringConvertible", "green"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
@@ -327,6 +329,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "set"]
 - ["Ps28CustomDebugStringConvertible", "standard"]
+- !private ["Ps28CustomDebugStringConvertible", "styles"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -354,9 +357,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
-- !private ["Ps17CustomReflectable", "blue"]
 - !private ["Ps17CustomReflectable", "count"]
-- !private ["Ps17CustomReflectable", "green"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "remove"]
 - !private ["Ps17CustomReflectable", "row"]
@@ -372,6 +373,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UITableViewRowAction"]
 - ["Ps23CustomStringConvertible", "UserDefaults"]
@@ -384,7 +386,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "alert"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
-- !private ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - ["Ps23CustomStringConvertible", "defaults"]
@@ -393,7 +394,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "font"]
-- !private ["Ps23CustomStringConvertible", "green"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps23CustomStringConvertible", "init"]
@@ -426,6 +426,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["Ps23CustomStringConvertible", "set"]
 - ["Ps23CustomStringConvertible", "standard"]
+- !private ["Ps23CustomStringConvertible", "styles"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -453,6 +454,7 @@ depends-member:
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UITableViewRowAction"]
 - ["Ps9Equatable", "UserDefaults"]
@@ -464,7 +466,6 @@ depends-member:
 - ["Ps9Equatable", "alert"]
 - !private ["Ps9Equatable", "automatic"]
 - !private ["Ps9Equatable", "backgroundColor"]
-- !private ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "cancel"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "default"]
@@ -474,7 +475,6 @@ depends-member:
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "font"]
-- !private ["Ps9Equatable", "green"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9Equatable", "init"]
@@ -507,6 +507,7 @@ depends-member:
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
 - !private ["Ps9Equatable", "set"]
 - ["Ps9Equatable", "standard"]
+- !private ["Ps9Equatable", "styles"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textFields"]
@@ -535,8 +536,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps23ExpressibleByNilLiteral", "blue"]
-- !private ["Ps23ExpressibleByNilLiteral", "green"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -546,6 +545,7 @@ depends-member:
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UITableViewRowAction"]
 - ["Ps8Hashable", "UserDefaults"]
@@ -557,7 +557,6 @@ depends-member:
 - ["Ps8Hashable", "alert"]
 - !private ["Ps8Hashable", "automatic"]
 - !private ["Ps8Hashable", "backgroundColor"]
-- !private ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "cancel"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "default"]
@@ -567,7 +566,6 @@ depends-member:
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "font"]
-- !private ["Ps8Hashable", "green"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps8Hashable", "init"]
@@ -600,6 +598,7 @@ depends-member:
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
 - !private ["Ps8Hashable", "set"]
 - ["Ps8Hashable", "standard"]
+- !private ["Ps8Hashable", "styles"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textFields"]
@@ -655,6 +654,7 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "init"]
 - ["C17Hack_Sprint_To_Do17ItemTableViewCell", "deinit"]
 - !private ["C17Hack_Sprint_To_Do17ItemTableViewCell", "itemLabel"]
+- !private ["C17Hack_Sprint_To_Do17ItemTableViewCell", "styles"]
 - !private ["C17Hack_Sprint_To_Do17ItemTableViewCell", "timeLabel"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
@@ -692,6 +692,7 @@ depends-member:
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UITableViewRowAction"]
 - ["PSo8NSCoding", "UserDefaults"]
@@ -699,7 +700,6 @@ depends-member:
 - ["PSo8NSCoding", "addItem"]
 - !private ["PSo8NSCoding", "addTextField"]
 - ["PSo8NSCoding", "alert"]
-- !private ["PSo8NSCoding", "blue"]
 - !private ["PSo8NSCoding", "dataSource"]
 - ["PSo8NSCoding", "defaults"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -707,7 +707,6 @@ depends-member:
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "font"]
-- !private ["PSo8NSCoding", "green"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedView"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "init"]
@@ -735,6 +734,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitles"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- !private ["PSo8NSCoding", "styles"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textFields"]
@@ -746,13 +746,12 @@ depends-member:
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "backgroundColor"]
-- !private ["PSo9NSCopying", "blue"]
-- !private ["PSo9NSCopying", "green"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewRowAction"]
 - ["PSo26NSExtensionRequestHandling", "UserDefaults"]
@@ -804,6 +803,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
@@ -815,7 +815,6 @@ depends-member:
 - !private ["CSo8NSObject", "addTextField"]
 - ["CSo8NSObject", "alert"]
 - !private ["CSo8NSObject", "backgroundColor"]
-- !private ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "dataSource"]
 - ["CSo8NSObject", "defaults"]
 - !private ["CSo8NSObject", "delegate"]
@@ -823,7 +822,6 @@ depends-member:
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "font"]
-- !private ["CSo8NSObject", "green"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
@@ -854,6 +852,7 @@ depends-member:
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - !private ["CSo8NSObject", "set"]
 - ["CSo8NSObject", "standard"]
+- !private ["CSo8NSObject", "styles"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textFields"]
@@ -867,6 +866,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UITableViewRowAction"]
 - ["PSo16NSObjectProtocol", "UserDefaults"]
@@ -875,7 +875,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTextField"]
 - ["PSo16NSObjectProtocol", "alert"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
-- !private ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - ["PSo16NSObjectProtocol", "defaults"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -883,7 +882,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "font"]
-- !private ["PSo16NSObjectProtocol", "green"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -914,6 +912,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - !private ["PSo16NSObjectProtocol", "set"]
 - ["PSo16NSObjectProtocol", "standard"]
+- !private ["PSo16NSObjectProtocol", "styles"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textFields"]
@@ -924,14 +923,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blue"]
-- !private ["PSo14NSSecureCoding", "green"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
-- !private ["Sq", "blue"]
 - ["Sq", "deinit"]
-- !private ["Sq", "green"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -1033,6 +1028,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "itemLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "placeholder"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "styles"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "timeLabel"]
 - ["CSo13UIAlertAction", "deinit"]
@@ -1055,12 +1051,14 @@ depends-member:
 - !private ["PSo12UIAppearance", "itemLabel"]
 - !private ["PSo12UIAppearance", "placeholder"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "styles"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "timeLabel"]
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewRowAction"]
 - ["PSo21UIAppearanceContainer", "UserDefaults"]
@@ -1102,6 +1100,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitles"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UIAppearanceContainer", "styles"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textFields"]
@@ -1112,12 +1111,13 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo7UIColor", "blue"]
-- !private ["CSo7UIColor", "green"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UITableViewRowAction"]
 - ["PSo18UIContentContainer", "UserDefaults"]
@@ -1172,6 +1172,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "itemLabel"]
 - !private ["PSo17UICoordinateSpace", "placeholder"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "styles"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "timeLabel"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
@@ -1182,12 +1183,14 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "itemLabel"]
 - !private ["PSo13UIDynamicItem", "placeholder"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "styles"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "timeLabel"]
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewRowAction"]
 - ["PSo18UIFocusEnvironment", "UserDefaults"]
@@ -1229,6 +1232,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitles"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UIFocusEnvironment", "styles"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textFields"]
@@ -1247,10 +1251,12 @@ depends-member:
 - !private ["PSo11UIFocusItem", "itemLabel"]
 - !private ["PSo11UIFocusItem", "placeholder"]
 - !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "styles"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "timeLabel"]
 - !private ["CSo6UIFont", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "itemLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "styles"]
 - !private ["PSo27UIGestureRecognizerDelegate", "timeLabel"]
 - !private ["PSo10UIKeyInput", "placeholder"]
 - !private ["PSo10UIKeyInput", "text"]
@@ -1265,6 +1271,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
@@ -1309,6 +1316,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitles"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- !private ["CSo11UIResponder", "styles"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textFields"]
@@ -1322,6 +1330,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UITableViewRowAction"]
 - ["PSo30UIResponderStandardEditActions", "UserDefaults"]
@@ -1363,6 +1372,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitles"]
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "styles"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textFields"]
@@ -1382,6 +1392,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewRowAction"]
 - ["PSo20UIScrollViewDelegate", "UserDefaults"]
@@ -1419,6 +1430,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UITableViewRowAction"]
 - ["PSo16UIStateRestoring", "UserDefaults"]
@@ -1467,11 +1479,13 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "itemLabel"]
+- !private ["CSo15UITableViewCell", "styles"]
 - !private ["CSo15UITableViewCell", "timeLabel"]
 - !private ["PSo21UITableViewDataSource", "Int"]
 - !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIAlertAction"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UITableViewRowAction"]
 - ["PSo21UITableViewDataSource", "UserDefaults"]
@@ -1509,6 +1523,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIAlertAction"]
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UITableViewRowAction"]
 - ["PSo19UITableViewDelegate", "UserDefaults"]
@@ -1560,6 +1575,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UITableViewRowAction"]
 - ["PSo18UITraitEnvironment", "UserDefaults"]
@@ -1601,6 +1617,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitles"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UITraitEnvironment", "styles"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textFields"]
@@ -1619,6 +1636,7 @@ depends-member:
 - !private ["CSo6UIView", "itemLabel"]
 - !private ["CSo6UIView", "placeholder"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "styles"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "timeLabel"]
 - ["CSo16UIViewController", "AnyObject"]
@@ -1630,6 +1648,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
@@ -1692,6 +1711,7 @@ depends-member:
 - !private ["C17Hack_Sprint_To_Do14ViewController", "UIAlertAction"]
 - !private ["C17Hack_Sprint_To_Do14ViewController", "UIAlertController"]
 - ["C17Hack_Sprint_To_Do14ViewController", "UIButton"]
+- !private ["C17Hack_Sprint_To_Do14ViewController", "UIColor"]
 - !private ["C17Hack_Sprint_To_Do14ViewController", "UIFont"]
 - ["C17Hack_Sprint_To_Do14ViewController", "UITableView"]
 - ["C17Hack_Sprint_To_Do14ViewController", "UITableViewCell"]
@@ -1752,6 +1772,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "itemLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "placeholder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "styles"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "timeLabel"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
@@ -1774,8 +1795,7 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps26_ExpressibleByColorLiteral", "blue"]
-- !private ["Ps26_ExpressibleByColorLiteral", "green"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
@@ -1783,6 +1803,7 @@ depends-member:
 - !private ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UIAlertAction"]
 - !private ["Ps9_Hashable", "UIAlertController"]
+- !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UITableViewRowAction"]
 - ["Ps9_Hashable", "UserDefaults"]
@@ -1794,7 +1815,6 @@ depends-member:
 - ["Ps9_Hashable", "alert"]
 - !private ["Ps9_Hashable", "automatic"]
 - !private ["Ps9_Hashable", "backgroundColor"]
-- !private ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "cancel"]
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "default"]
@@ -1804,7 +1824,6 @@ depends-member:
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "font"]
-- !private ["Ps9_Hashable", "green"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9_Hashable", "init"]
@@ -1837,6 +1856,7 @@ depends-member:
 - ["Ps9_Hashable", "sectionIndexTitlesForTableView"]
 - !private ["Ps9_Hashable", "set"]
 - ["Ps9_Hashable", "standard"]
+- !private ["Ps9_Hashable", "styles"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textFields"]
@@ -1870,9 +1890,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
-- !private ["Ps21_ObjectiveCBridgeable", "blue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
-- !private ["Ps21_ObjectiveCBridgeable", "green"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "remove"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
@@ -1913,7 +1931,6 @@ depends-nominal:
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1964,7 +1981,7 @@ depends-nominal:
 - "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo7UIColor"
+- "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"

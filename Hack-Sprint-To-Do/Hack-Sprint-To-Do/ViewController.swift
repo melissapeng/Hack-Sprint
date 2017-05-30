@@ -72,7 +72,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.itemLabel.text = items[indexPath.row]
         cell.timeLabel.text = String(times[indexPath.row])
-        cell.itemLabel.font = UIFont(name: "Helvetica Neue", size: 14)
+        
+        
+        
+        cell.itemLabel.font = UIFont(name: "Helvetica", size: 15)
+        cell.styles(index: indexPath.row)
+
+        
+
+        
         return cell
     }
     
@@ -139,10 +147,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         present(alert, animated: true, completion: nil)
+        
+
+
     }
+    
+
+    
+    
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
+
         items.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
         defaults.set(items, forKey: "listDefaults")        //updates the storage
@@ -161,6 +178,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
+        
+        
+        
         let start = UITableViewRowAction(style: .normal, title: "Start") { action, index in
             print("start task button tapped")
             
@@ -169,7 +189,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
             
         }
-        start.backgroundColor = .blue
+        start.backgroundColor = UIColor(red: 70.0/255, green: 183.0/255, blue: 220.0/255, alpha: 1.0)
         
         let cancel = UITableViewRowAction(style: .normal, title: "Cancel") { action, index in
             print("cancel button tapped")
@@ -185,7 +205,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             
         }
-        cancel.backgroundColor = .green
+        cancel.backgroundColor = UIColor(red: 222.0/255, green: 50.0/255, blue: 147.0/255, alpha: 1.0)
         
         return [cancel, start]
     }

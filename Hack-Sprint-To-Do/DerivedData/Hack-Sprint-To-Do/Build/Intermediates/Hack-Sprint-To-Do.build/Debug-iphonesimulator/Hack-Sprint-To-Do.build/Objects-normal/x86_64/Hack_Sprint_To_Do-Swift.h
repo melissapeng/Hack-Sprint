@@ -136,6 +136,7 @@ SWIFT_CLASS("_TtC17Hack_Sprint_To_Do11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
 @class UILabel;
 @class NSCoder;
 
@@ -143,6 +144,8 @@ SWIFT_CLASS("_TtC17Hack_Sprint_To_Do17ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+- (void)stylesWithIndex:(NSInteger)index;
+- (UIColor * _Nonnull)hexStringToUIColorWithHex:(NSString * _Nonnull)hex;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

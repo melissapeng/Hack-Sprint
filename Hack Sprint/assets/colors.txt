@@ -1,0 +1,4 @@
+BLACK: 414042
+GRAY: bcbec0
+PINK: de3293
+BLUE: 46b7dc
