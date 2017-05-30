@@ -116,6 +116,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -135,12 +136,74 @@ SWIFT_CLASS("_TtC17Hack_Sprint_To_Do11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class UILabel;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC17Hack_Sprint_To_Do14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC17Hack_Sprint_To_Do17ItemTableViewCell")
+@interface ItemTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImagePickerController;
+@class UIImageView;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC17Hack_Sprint_To_Do21LoadingViewController")
+@interface LoadingViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified myImageView;
+- (IBAction)myAddImage:(id _Nonnull)sender;
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSTimer;
+
+SWIFT_CLASS("_TtC17Hack_Sprint_To_Do19TimerViewController")
+@interface TimerViewController : UIViewController
+@property (nonatomic) NSInteger seconds;
+@property (nonatomic, strong) NSTimer * _Nonnull timer;
+@property (nonatomic) BOOL isTimerRunning;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timerLabel;
+- (IBAction)startButton:(id _Nonnull)sender;
+- (void)runTimer;
+- (void)updateTimer;
+- (NSString * _Nonnull)timeStringWithTime:(NSTimeInterval)time;
+- (void)alert;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSUserDefaults;
+@class UITableView;
+@class UITableViewRowAction;
+@class UIButton;
+
+SWIFT_CLASS("_TtC17Hack_Sprint_To_Do14ViewController")
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull items;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull times;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toMenu;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified listTV;
+- (IBAction)addItem:(id _Nonnull)sender;
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)alert;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSArray<UITableViewRowAction *> * _Nullable)tableView:(UITableView * _Nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

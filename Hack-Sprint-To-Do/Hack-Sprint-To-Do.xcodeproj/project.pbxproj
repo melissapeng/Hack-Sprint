@@ -12,6 +12,10 @@
 		9812D2A41ECD3348000E2C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9812D2A21ECD3348000E2C85 /* Main.storyboard */; };
 		9812D2A61ECD3348000E2C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9812D2A51ECD3348000E2C85 /* Assets.xcassets */; };
 		9812D2A91ECD3348000E2C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9812D2A71ECD3348000E2C85 /* LaunchScreen.storyboard */; };
+		9833DB381EDBCC9000BE1502 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833DB371EDBCC9000BE1502 /* TimerViewController.swift */; };
+		98C9BBD21ED8EBEA004EDD80 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9BBD11ED8EBEA004EDD80 /* ItemTableViewCell.swift */; };
+		98CA6A831EDB9A9300BC52B9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA6A821EDB9A9300BC52B9 /* LoadingViewController.swift */; };
+		98CA6A871EDBCA9700BC52B9 /* fb.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 98CA6A861EDBCA9700BC52B9 /* fb.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		9812D2A51ECD3348000E2C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9812D2A81ECD3348000E2C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9812D2AA1ECD3348000E2C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9833DB371EDBCC9000BE1502 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		98C9BBD11ED8EBEA004EDD80 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		98CA6A821EDB9A9300BC52B9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		98CA6A861EDBCA9700BC52B9 /* fb.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fb.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,11 @@
 			children = (
 				9812D29E1ECD3348000E2C85 /* AppDelegate.swift */,
 				9812D2A01ECD3348000E2C85 /* ViewController.swift */,
+				98CA6A821EDB9A9300BC52B9 /* LoadingViewController.swift */,
+				98C9BBD11ED8EBEA004EDD80 /* ItemTableViewCell.swift */,
 				9812D2A21ECD3348000E2C85 /* Main.storyboard */,
+				9833DB371EDBCC9000BE1502 /* TimerViewController.swift */,
+				98CA6A861EDBCA9700BC52B9 /* fb.jpeg */,
 				9812D2A51ECD3348000E2C85 /* Assets.xcassets */,
 				9812D2A71ECD3348000E2C85 /* LaunchScreen.storyboard */,
 				9812D2AA1ECD3348000E2C85 /* Info.plist */,
@@ -127,6 +139,7 @@
 				9812D2A91ECD3348000E2C85 /* LaunchScreen.storyboard in Resources */,
 				9812D2A61ECD3348000E2C85 /* Assets.xcassets in Resources */,
 				9812D2A41ECD3348000E2C85 /* Main.storyboard in Resources */,
+				98CA6A871EDBCA9700BC52B9 /* fb.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9833DB381EDBCC9000BE1502 /* TimerViewController.swift in Sources */,
 				9812D2A11ECD3348000E2C85 /* ViewController.swift in Sources */,
+				98C9BBD21ED8EBEA004EDD80 /* ItemTableViewCell.swift in Sources */,
 				9812D29F1ECD3348000E2C85 /* AppDelegate.swift in Sources */,
+				98CA6A831EDB9A9300BC52B9 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +318,7 @@
 				9812D2AF1ECD3348000E2C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
