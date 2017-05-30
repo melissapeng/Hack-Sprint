@@ -18,12 +18,21 @@ class TimerViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var secondLabel: UILabel!
+    
+    
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBAction func startButton(_ sender: Any) {
         if(isTimerRunning == false){
             runTimer()
         }
     }
     
+    @IBAction func stopButton(_ sender: Any) {
+        timer.invalidate()
+        congrats()
+    }
 
     
     func runTimer() {
@@ -39,31 +48,71 @@ class TimerViewController: UIViewController {
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
+            secondLabel.text = secondTime(time: TimeInterval(seconds))
         }
- //This will update the label.
+        
+        
+    //This will update the label.
     }
     
     func timeString(time:TimeInterval) -> String {
-        let hours = Int(time) / 3600
         let minutes = Int(time) / 60 % 60
+
+        return String(minutes)
+    }
+    
+    func secondTime(time: TimeInterval) -> String {
         let seconds = Int(time) % 60
-        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+        let milliseconds = Int(time) % 60 % 60
+        
+        return String(format:"%02i sec", seconds, milliseconds)
     }
     
     func alert(){
         let alert = UIAlertController(title: "", message: "Sorry, your time ran out.  Your picture is currently being published.", preferredStyle: .alert)
     
         
+        present(alert, animated: true, completion: nil)
+
+    }
     
+    func congrats(){
+        let congrats = UIAlertController(title: "CONGRATULATIONS", message: "YOU ESCAPED YOUR MODERN DAY DOOM", preferredStyle: .alert)
+        
+        
+        let done = UIAlertAction(title: "Done", style: .cancel){
+            (action) in
+            
+        }
+        
+        congrats.addAction(done)
+        
+        present(congrats, animated: true, completion: nil)
+
     }
     
     
     
+    @IBOutlet weak var blueDot: UILabel!
+    
+    @IBOutlet weak var pinkDot: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
+        //styles
+        blueDot.layer.masksToBounds = true;
+        pinkDot.layer.masksToBounds = true;
+        
+        blueDot.layer.cornerRadius = 3
+        pinkDot.layer.cornerRadius = 3
+        
+        doneButton.setTitleTextAttributes([ NSFontAttributeName: UIFont(name: "DIN Light", size: 12)!], for: UIControlState.normal)
+        backButton.setTitleTextAttributes([ NSFontAttributeName: UIFont(name: "DIN Light", size: 12)!], for: UIControlState.normal)
     }
 
     override func didReceiveMemoryWarning() {

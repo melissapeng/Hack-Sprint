@@ -21,8 +21,10 @@ class ItemTableViewCell: UITableViewCell {
         let customBlue = hexStringToUIColor(hex: "#46b7dc")
 
         timeLabel.layer.borderWidth = 2.00
-        timeLabel.font = UIFont(name: "Helvetica", size: 15)
-        timeLabel.layer.cornerRadius = 25
+        timeLabel.font = UIFont(name: "DIN Light", size: 18)
+        itemLabel.font = UIFont(name: "DIN Light", size: 22)
+
+        timeLabel.layer.cornerRadius = 20
         
         //set alternating colors
         if(index%2 == 0){

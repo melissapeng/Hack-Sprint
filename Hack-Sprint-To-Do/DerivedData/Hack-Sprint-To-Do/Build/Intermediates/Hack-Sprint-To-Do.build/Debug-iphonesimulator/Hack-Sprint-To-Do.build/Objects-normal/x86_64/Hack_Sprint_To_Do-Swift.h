@@ -151,11 +151,14 @@ SWIFT_CLASS("_TtC17Hack_Sprint_To_Do17ItemTableViewCell")
 @end
 
 @class UIImagePickerController;
+@class UIBarButtonItem;
 @class UIImageView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC17Hack_Sprint_To_Do21LoadingViewController")
 @interface LoadingViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified doneButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified backButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified myImageView;
 - (IBAction)myAddImage:(id _Nonnull)sender;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
@@ -176,11 +179,19 @@ SWIFT_CLASS("_TtC17Hack_Sprint_To_Do19TimerViewController")
 @property (nonatomic, strong) NSTimer * _Nonnull timer;
 @property (nonatomic) BOOL isTimerRunning;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timerLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified secondLabel;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified doneButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified backButton;
 - (IBAction)startButton:(id _Nonnull)sender;
+- (IBAction)stopButton:(id _Nonnull)sender;
 - (void)runTimer;
 - (void)updateTimer;
 - (NSString * _Nonnull)timeStringWithTime:(NSTimeInterval)time;
+- (NSString * _Nonnull)secondTimeWithTime:(NSTimeInterval)time;
 - (void)alert;
+- (void)congrats;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified blueDot;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pinkDot;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

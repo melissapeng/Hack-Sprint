@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XbSBTW3TdMTkUiYarZySQT/eNmQ=
+			ujyampvIHRIZx3/q7hsIlcWzmDo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +44,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			78X1r9IQmcPFap8cL/+kQNDZrlc=
+			lOA9oMgzHZ40bLZX+9MQYZB0WT0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n6nPvzeDBuE74xCX1M6ThCbT7tU=
+			B5JiHnK9r6IqdOSyGN1ASXcV+0w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PDPa+1Sz5j1aalCSVWi7l1U4/Lg=
+			AZLzdYgJnj2FthH6L5hC4X8xun4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1lUUEpy9VthUyVfxFaSOjaUXuEM=
+			P7qqZ9/vBGswCAJ0aYMVOAZ0BeE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +80,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XvXssJyVWmyE358cfBTD5jCMFII=
+			I3dxP3N5YgbCkZlbi1Pg7qwRL6E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -89,11 +89,23 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LVxfCfa7vGtp5RBo9JuUxmDqTAw=
+			+tv+/UFKsuSn52dB+GxG6lcuLFI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>BlueGradBar.png</key>
+		<data>
+		A12j/AQyxI/IYtgMlxJJb4hcTfg=
+		</data>
+		<key>DIN Light.ttf</key>
+		<data>
+		tXjuuF059Fvv3HBZdLaoykpJhVE=
+		</data>
+		<key>DIN Medium.ttf</key>
+		<data>
+		9hxzrHK3zFvdtyaVmGvB/IUaOqQ=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		u5b07I8v3WpyCx+6S67HnG1yZKE=
@@ -136,11 +148,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OtMFvecWTTURssiQswczxtpHowo=
+		/IW5MBfuntobQwCpKmUFtNenoDc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>circle.png</key>
+		<data>
+		edXqG035csSqw9cRf1WP8sYYz5w=
+		</data>
+		<key>colors.txt</key>
+		<data>
+		oXO/WMQu4n3+36ShPzlarjg4gCw=
+		</data>
+		<key>din bold condensed.otf</key>
+		<data>
+		qdrn/rZcllRe1+/3a14YUZyvHxc=
 		</data>
 		<key>fb.jpeg</key>
 		<data>
@@ -149,6 +173,26 @@
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
 		Ny/fIySdsHLFV3uRgyoWc6RRFmI=
+		</data>
+		<key>list.png</key>
+		<data>
+		H+h+3gKkrql8wRoJjerC1bZ8a/A=
+		</data>
+		<key>new task underline.png</key>
+		<data>
+		eNq/IU9YiMhwOMBPoJm0ib3AW60=
+		</data>
+		<key>start underline.png</key>
+		<data>
+		u0ITL6ZLwCXlTJCRRhpngJHGbs0=
+		</data>
+		<key>team michael.ai</key>
+		<data>
+		rGSa9s70EAEqozkNCcLN9hAai8I=
+		</data>
+		<key>timer.png</key>
+		<data>
+		/C5o+DBo2f0h8CeTriiKQpBYyuE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -196,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XbSBTW3TdMTkUiYarZySQT/eNmQ=
+			ujyampvIHRIZx3/q7hsIlcWzmDo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jLK+jmdaRcJv6RC9QdaXl7jqm6t2qVOWC4h3gJeDHS0=
+			BK+SINOFgepyhRxwXTWcAEnyUG25gCmzJQalNnejL+o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -209,11 +253,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			78X1r9IQmcPFap8cL/+kQNDZrlc=
+			lOA9oMgzHZ40bLZX+9MQYZB0WT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fqxaDZj1ZANAodPUdTCvuuWG5TPCr6j4BhliaGwhx1U=
+			KvHKOnucadu3ZVrL2dU17vt++VffepyrbtwFq4UtSgE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -222,11 +266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n6nPvzeDBuE74xCX1M6ThCbT7tU=
+			B5JiHnK9r6IqdOSyGN1ASXcV+0w=
 			</data>
 			<key>hash2</key>
 			<data>
-			At93YnSaoIcs/5IvrJS+t811GqXRpuDiP3/ZUNtk9ps=
+			7NBImJh0a47FKTV4hpDN4CrkM7vwN+1lypDstXo1VK4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -235,11 +279,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PDPa+1Sz5j1aalCSVWi7l1U4/Lg=
+			AZLzdYgJnj2FthH6L5hC4X8xun4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ODJgy2+VvsKX9OIVppQs8c/UozoNzzbbeViBjQSf7Qc=
+			bA9SKiMziz4XAeuQRkXExjjl6E0Mz9kz2L2vq+3HZvw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -248,11 +292,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1lUUEpy9VthUyVfxFaSOjaUXuEM=
+			P7qqZ9/vBGswCAJ0aYMVOAZ0BeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			DrM8MZeA504ApDlgmdoBhGiWhOE68Rq/xU61pe3G0L8=
+			vQJDJtxCYJuZ5E4hPpPYIDUQSwUzrflLp9W7q1+PDew=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -261,11 +305,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XvXssJyVWmyE358cfBTD5jCMFII=
+			I3dxP3N5YgbCkZlbi1Pg7qwRL6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			nrCNssWjXJU6cIftidUxcbz6Y7R+/4X7V+VWluiv90Q=
+			jhz64Jk+3Vq2BNzfOdR93XmQozHwIJHR6K1see4yEhw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -274,14 +318,47 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LVxfCfa7vGtp5RBo9JuUxmDqTAw=
+			+tv+/UFKsuSn52dB+GxG6lcuLFI=
 			</data>
 			<key>hash2</key>
 			<data>
-			wYI3jMoypHXhONtLpU1E1rq22GIzUoPm4/G+LO/3np8=
+			v7El6pOBLiuK2VHu+8aqhuJMRM5DSbR+HmARYT5nkF4=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>BlueGradBar.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A12j/AQyxI/IYtgMlxJJb4hcTfg=
+			</data>
+			<key>hash2</key>
+			<data>
+			8uEdtZzfC54mMzrgVpdU3tKuA0i7XzMbRD6m/Kxr8PM=
+			</data>
+		</dict>
+		<key>DIN Light.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tXjuuF059Fvv3HBZdLaoykpJhVE=
+			</data>
+			<key>hash2</key>
+			<data>
+			HQKuDZx2Bg4OCu+HVinDCmNSkVW31cFUVXtAL4WT85U=
+			</data>
+		</dict>
+		<key>DIN Medium.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9hxzrHK3zFvdtyaVmGvB/IUaOqQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			f+3SstASA2m4xO00c1hpnQeVJG7vVsr8hyRz603BY0Y=
+			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
@@ -393,6 +470,39 @@
 			LKFPTUpBtenmsLKZuIozhsw72DYUOTHrROjw0Hd+myk=
 			</data>
 		</dict>
+		<key>circle.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			edXqG035csSqw9cRf1WP8sYYz5w=
+			</data>
+			<key>hash2</key>
+			<data>
+			8ogQtf3VRl6OwIhXBqxffWUVaRl7+4UA/AuFp7cek3A=
+			</data>
+		</dict>
+		<key>colors.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oXO/WMQu4n3+36ShPzlarjg4gCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			tomWtQvmPrnPj+h4cJ/bkJB9d4m6BAl1gqT+ANVl3WA=
+			</data>
+		</dict>
+		<key>din bold condensed.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qdrn/rZcllRe1+/3a14YUZyvHxc=
+			</data>
+			<key>hash2</key>
+			<data>
+			/F2heoj0V80T7LH+Nj/Qjk7teddustKvHsZvS38IrCQ=
+			</data>
+		</dict>
 		<key>fb.jpeg</key>
 		<dict>
 			<key>hash</key>
@@ -413,6 +523,61 @@
 			<key>hash2</key>
 			<data>
 			4hKq03lKhCBkzaHjduBVuK8RenMCbLx/VouId2Dl2Dw=
+			</data>
+		</dict>
+		<key>list.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H+h+3gKkrql8wRoJjerC1bZ8a/A=
+			</data>
+			<key>hash2</key>
+			<data>
+			4icSrSLGXQZEl/Vo33cXYN4/AXoLF+GQeHBxYXN8wAs=
+			</data>
+		</dict>
+		<key>new task underline.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eNq/IU9YiMhwOMBPoJm0ib3AW60=
+			</data>
+			<key>hash2</key>
+			<data>
+			P3CWt1Kbbpac+jHagc3vOU2izod57F5nRt9om1N4mFk=
+			</data>
+		</dict>
+		<key>start underline.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u0ITL6ZLwCXlTJCRRhpngJHGbs0=
+			</data>
+			<key>hash2</key>
+			<data>
+			+LGlvEgwp3GFIJFLCy2dILg4C+iEOyalZgDZLhQzgXE=
+			</data>
+		</dict>
+		<key>team michael.ai</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rGSa9s70EAEqozkNCcLN9hAai8I=
+			</data>
+			<key>hash2</key>
+			<data>
+			9kZkaGvAHj+c1Sc6SnjOZUr/0PrdMtdznP0avhzf3T4=
+			</data>
+		</dict>
+		<key>timer.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/C5o+DBo2f0h8CeTriiKQpBYyuE=
+			</data>
+			<key>hash2</key>
+			<data>
+			K40ZI35+xpA54AZ1fj3/8jjN6xHkPDTQkEjpHKnvCsA=
 			</data>
 		</dict>
 	</dict>

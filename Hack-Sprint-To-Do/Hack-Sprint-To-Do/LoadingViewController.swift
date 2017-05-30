@@ -11,6 +11,8 @@ import UIKit
 class LoadingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var myImageView: UIImageView!
     @IBAction func myAddImage(_ sender: Any) {
         picker.allowsEditing = false
@@ -18,11 +20,13 @@ class LoadingViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         present(picker, animated: true, completion: nil)
     }
+    
     let picker = UIImagePickerController()
     
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
@@ -40,7 +44,18 @@ class LoadingViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
 
         picker.delegate = self
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
+        //styles
+        myImageView.layer.cornerRadius = 135
+        myImageView.layer.masksToBounds = true
+        myImageView.clipsToBounds = true
+        doneButton.setTitleTextAttributes([ NSFontAttributeName: UIFont(name: "DIN Light", size: 12)!], for: UIControlState.normal)
+        backButton.setTitleTextAttributes([ NSFontAttributeName: UIFont(name: "DIN Light", size: 12)!], for: UIControlState.normal)
+
+
     }
 
     override func didReceiveMemoryWarning() {

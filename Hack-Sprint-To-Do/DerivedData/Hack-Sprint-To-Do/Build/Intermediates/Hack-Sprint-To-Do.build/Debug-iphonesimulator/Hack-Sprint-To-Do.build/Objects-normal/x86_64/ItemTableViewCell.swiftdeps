@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C17Hack_Sprint_To_Do17ItemTableViewCell", ""]
 provides-dynamic-lookup:
-- "timeLabel"
 - "hexStringToUIColor"
+- "timeLabel"
 - "itemLabel"
 - "styles"
 depends-top-level:
-- !private "UInt32"
-- "ItemTableViewCell"
-- !private ">>"
-- !private "!="
-- "String"
-- !private "StringLiteralType"
-- !private "%"
-- "UIColor"
-- !private "Scanner"
-- !private "UIFont"
-- "UILabel"
-- !private "CGFloat"
 - !private "UnicodeScalarType"
+- !private "!="
+- !private "StringLiteralType"
+- "ItemTableViewCell"
+- !private "%"
 - "Int"
 - "AssignmentPrecedence"
 - !private "=="
 - !private "&"
 - "UITableViewCell"
+- !private "UIFont"
+- !private "UInt32"
 - !private "/"
+- "UIColor"
+- !private ">>"
+- !private "Scanner"
+- "UILabel"
+- "String"
+- !private "CGFloat"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

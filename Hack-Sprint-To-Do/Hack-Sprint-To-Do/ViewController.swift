@@ -40,21 +40,31 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
 
         //memory
+        
+        var timeArray = defaults.object(forKey: "timeDefaults") as! [Int]
+        var listArray = defaults.object(forKey: "listDefaults") as! [String]
+        
+        
+        if(timeArray.count != listArray.count){
+            timeArray = [Int]()
+            listArray = [String]()
+            self.defaults.set(timeArray, forKey: "timeDefaults")
+            self.defaults.set(listArray, forKey: "listDefaults")
+
+        }
+        
+        
         if(defaults.object(forKey: "listDefaults") != nil){
-            var tempArray: [String] = []
-            tempArray = defaults.object(forKey: "listDefaults") as! [String]
-            items = tempArray       //assigns items to the defaults array
+            items = listArray       //assigns items to the defaults array
             
         }
         
         if(defaults.object(forKey: "timeDefaults") != nil){
-            var tempArray: [Int] = []
-            tempArray = defaults.object(forKey: "timeDefaults") as! [Int]
-            times = tempArray       //assigns items to the defaults array
+            times = timeArray       //assigns items to the defaults array
             
         }
         
-        
+
         
         
     }
@@ -94,13 +104,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         alert.addTextField{
             (textfield) in
-            textfield.placeholder = "Enter Time Alloted"
+            textfield.placeholder = "Enter Time Alotted (in minutes)"
         }
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel){
             (action) in
             
         }
+
+        
+        
         let add = UIAlertAction(title: "Add", style: .default){
             (action) in
             
@@ -125,7 +138,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             //check if they actually wrote a time
             if(timeTextField.text == nil){
-                timeTextField.text = String(5)
+                timeTextField.text = "69"
             }
             
             self.times.append(Int(timeTextField.text!)!)
