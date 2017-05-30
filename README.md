@@ -1,4 +1,4 @@
-# Hack-Sprint-name-of-project-
+# For your eyes only
 
 
 ## Description
@@ -19,6 +19,9 @@ May 17 - 22: Design Process Underway;
 May 22: Development starts;
 
 May 31: MVP is finalized and presented;
+
+June 7: MVP is created and presented;
+
 
 ## What the MVP includes
 
