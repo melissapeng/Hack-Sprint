@@ -10,11 +10,14 @@ import UIKit
 
 class TimerViewController: UIViewController {
     
-    var seconds = 120 //This variable will hold a starting value of seconds. It could be any amount above 0.
+    var seconds = 60*30 //This variable will hold a starting value of seconds. It could be any amount above 0.
     
     var timer = Timer()
     
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
+    
+    let shareData = Shared.shared.chosenMinutes
+    
     
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -101,7 +104,7 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
 
         
-        
+        seconds = shareData! * 60
         
         
         //styles

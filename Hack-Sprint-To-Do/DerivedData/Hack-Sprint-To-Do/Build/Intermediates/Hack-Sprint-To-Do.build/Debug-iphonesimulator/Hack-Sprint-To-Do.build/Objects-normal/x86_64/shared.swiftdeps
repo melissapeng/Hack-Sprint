@@ -1,0 +1,39 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Shared"
+provides-nominal:
+- "C17Hack_Sprint_To_Do6Shared"
+provides-member:
+- ["C17Hack_Sprint_To_Do6Shared", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Shared"
+- "Int"
+depends-member:
+- ["Ps9AnyObject", "Shared"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["SQ", "deinit"]
+- ["C17Hack_Sprint_To_Do6Shared", "Int"]
+- ["C17Hack_Sprint_To_Do6Shared", "Shared"]
+- ["C17Hack_Sprint_To_Do6Shared", "chosenMinutes"]
+- ["C17Hack_Sprint_To_Do6Shared", "deinit"]
+- ["C17Hack_Sprint_To_Do6Shared", "init"]
+- ["C17Hack_Sprint_To_Do6Shared", "shared"]
+depends-nominal:
+- "Ps9AnyObject"
+- "SQ"
+- "C17Hack_Sprint_To_Do6Shared"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "46087215cbf5de0b32d4d6505af3c5c8"

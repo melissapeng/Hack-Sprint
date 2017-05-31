@@ -10,7 +10,6 @@ import UIKit
 
 class LoadingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var myImageView: UIImageView!
@@ -64,6 +63,7 @@ class LoadingViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
 
+    
     /*
     // MARK: - Navigation
 

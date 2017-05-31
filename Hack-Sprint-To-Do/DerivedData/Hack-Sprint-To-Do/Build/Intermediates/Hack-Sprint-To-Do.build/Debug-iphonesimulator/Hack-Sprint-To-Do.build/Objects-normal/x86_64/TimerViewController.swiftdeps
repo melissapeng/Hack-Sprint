@@ -6,52 +6,55 @@ provides-nominal:
 provides-member:
 - ["C17Hack_Sprint_To_Do19TimerViewController", ""]
 provides-dynamic-lookup:
-- "runTimer"
-- "startButton"
-- "pinkDot"
-- "alert"
-- "isTimerRunning"
+- "seconds"
 - "viewDidLoad"
-- "timer"
-- "secondLabel"
+- "stopButton"
 - "backButton"
+- "isTimerRunning"
+- "secondLabel"
+- "secondTime"
+- "pinkDot"
+- "updateTimer"
+- "startButton"
+- "didReceiveMemoryWarning"
+- "alert"
+- "timer"
+- "runTimer"
 - "blueDot"
 - "timeString"
 - "timerLabel"
-- "stopButton"
-- "updateTimer"
 - "congrats"
 - "doneButton"
-- "seconds"
-- "didReceiveMemoryWarning"
-- "secondTime"
 depends-top-level:
-- !private "UIControlState"
-- "TimerViewController"
-- !private "/"
+- "UIViewController"
 - !private "UIAlertAction"
+- !private "UIControlState"
+- "UILabel"
+- "*"
+- !private "%"
+- "String"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "-="
+- !private "NSFontAttributeName"
+- !private "StringLiteralType"
+- !private "UIFont"
+- "Shared"
+- !private "/"
+- !private "<"
+- "Timer"
+- "TimeInterval"
+- "TimerViewController"
+- "UIBarButtonItem"
+- !private "UIAlertController"
 - "BooleanLiteralType"
 - !private "Int"
 - !private "Dictionary"
-- !private "StringLiteralType"
-- "TimeInterval"
-- "Timer"
-- !private "UIAlertController"
-- !private "=="
-- "AssignmentPrecedence"
-- "UILabel"
-- "UIBarButtonItem"
-- !private "<"
-- !private "UIFont"
-- !private "NSFontAttributeName"
-- "UIViewController"
-- "String"
-- !private "-="
-- !private "%"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
+- ["Ps9AnyObject", "Shared"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "TimeInterval"]
 - ["Ps9AnyObject", "Timer"]
@@ -64,6 +67,7 @@ depends-member:
 - ["Ps9AnyObject", "alert"]
 - ["Ps9AnyObject", "backButton"]
 - ["Ps9AnyObject", "blueDot"]
+- ["Ps9AnyObject", "chosenMinutes"]
 - ["Ps9AnyObject", "congrats"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -81,6 +85,8 @@ depends-member:
 - ["Ps9AnyObject", "secondTime"]
 - ["Ps9AnyObject", "seconds"]
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
+- ["Ps9AnyObject", "shareData"]
+- ["Ps9AnyObject", "shared"]
 - ["Ps9AnyObject", "startButton"]
 - ["Ps9AnyObject", "stopButton"]
 - !private ["Ps9AnyObject", "text"]
@@ -105,6 +111,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Int"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSFontAttributeName"]
+- ["Ps7CVarArg", "Shared"]
 - !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "TimeInterval"]
 - ["Ps7CVarArg", "Timer"]
@@ -135,6 +142,7 @@ depends-member:
 - ["Ps7CVarArg", "secondTime"]
 - ["Ps7CVarArg", "seconds"]
 - !private ["Ps7CVarArg", "setTitleTextAttributes"]
+- ["Ps7CVarArg", "shareData"]
 - ["Ps7CVarArg", "startButton"]
 - ["Ps7CVarArg", "stopButton"]
 - !private ["Ps7CVarArg", "text"]
@@ -150,6 +158,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Int"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
+- ["Ps28CustomDebugStringConvertible", "Shared"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "TimeInterval"]
 - ["Ps28CustomDebugStringConvertible", "Timer"]
@@ -180,6 +189,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "secondTime"]
 - ["Ps28CustomDebugStringConvertible", "seconds"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
+- ["Ps28CustomDebugStringConvertible", "shareData"]
 - ["Ps28CustomDebugStringConvertible", "startButton"]
 - ["Ps28CustomDebugStringConvertible", "stopButton"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -198,6 +208,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
+- ["Ps23CustomStringConvertible", "Shared"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "TimeInterval"]
 - ["Ps23CustomStringConvertible", "Timer"]
@@ -229,6 +240,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "secondTime"]
 - ["Ps23CustomStringConvertible", "seconds"]
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
+- ["Ps23CustomStringConvertible", "shareData"]
 - ["Ps23CustomStringConvertible", "startButton"]
 - ["Ps23CustomStringConvertible", "stopButton"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -245,6 +257,7 @@ depends-member:
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
+- ["Ps9Equatable", "Shared"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "TimeInterval"]
 - ["Ps9Equatable", "Timer"]
@@ -277,6 +290,7 @@ depends-member:
 - ["Ps9Equatable", "secondTime"]
 - ["Ps9Equatable", "seconds"]
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
+- ["Ps9Equatable", "shareData"]
 - ["Ps9Equatable", "startButton"]
 - ["Ps9Equatable", "stopButton"]
 - !private ["Ps9Equatable", "text"]
@@ -299,6 +313,7 @@ depends-member:
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
+- ["Ps8Hashable", "Shared"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "TimeInterval"]
 - ["Ps8Hashable", "Timer"]
@@ -330,6 +345,7 @@ depends-member:
 - ["Ps8Hashable", "secondTime"]
 - ["Ps8Hashable", "seconds"]
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
+- ["Ps8Hashable", "shareData"]
 - ["Ps8Hashable", "startButton"]
 - ["Ps8Hashable", "stopButton"]
 - !private ["Ps8Hashable", "text"]
@@ -354,6 +370,7 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
+- ["PSo8NSCoding", "Shared"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "TimeInterval"]
 - ["PSo8NSCoding", "Timer"]
@@ -381,6 +398,7 @@ depends-member:
 - ["PSo8NSCoding", "secondTime"]
 - ["PSo8NSCoding", "seconds"]
 - !private ["PSo8NSCoding", "setTitleTextAttributes"]
+- ["PSo8NSCoding", "shareData"]
 - ["PSo8NSCoding", "startButton"]
 - ["PSo8NSCoding", "stopButton"]
 - !private ["PSo8NSCoding", "text"]
@@ -393,6 +411,7 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
+- ["PSo26NSExtensionRequestHandling", "Shared"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "TimeInterval"]
 - ["PSo26NSExtensionRequestHandling", "Timer"]
@@ -416,6 +435,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "secondLabel"]
 - ["PSo26NSExtensionRequestHandling", "secondTime"]
 - ["PSo26NSExtensionRequestHandling", "seconds"]
+- ["PSo26NSExtensionRequestHandling", "shareData"]
 - ["PSo26NSExtensionRequestHandling", "startButton"]
 - ["PSo26NSExtensionRequestHandling", "stopButton"]
 - ["PSo26NSExtensionRequestHandling", "timeString"]
@@ -427,6 +447,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
+- ["CSo8NSObject", "Shared"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "TimeInterval"]
 - ["CSo8NSObject", "Timer"]
@@ -458,6 +479,7 @@ depends-member:
 - ["CSo8NSObject", "secondTime"]
 - ["CSo8NSObject", "seconds"]
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
+- ["CSo8NSObject", "shareData"]
 - ["CSo8NSObject", "startButton"]
 - ["CSo8NSObject", "stopButton"]
 - !private ["CSo8NSObject", "text"]
@@ -468,6 +490,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
+- ["PSo16NSObjectProtocol", "Shared"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "TimeInterval"]
 - ["PSo16NSObjectProtocol", "Timer"]
@@ -497,6 +520,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "secondTime"]
 - ["PSo16NSObjectProtocol", "seconds"]
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
+- ["PSo16NSObjectProtocol", "shareData"]
 - ["PSo16NSObjectProtocol", "startButton"]
 - ["PSo16NSObjectProtocol", "stopButton"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -517,6 +541,9 @@ depends-member:
 - !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "Value"]
 - !private ["Ps10SetAlgebra", "normal"]
+- ["C17Hack_Sprint_To_Do6Shared", "chosenMinutes"]
+- ["C17Hack_Sprint_To_Do6Shared", "deinit"]
+- ["C17Hack_Sprint_To_Do6Shared", "shared"]
 - !private ["Ps13SignedInteger", "init"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
@@ -530,6 +557,7 @@ depends-member:
 - !private ["CSo5Timer", "scheduledTimer"]
 - !private ["C17Hack_Sprint_To_Do19TimerViewController", "Int"]
 - !private ["C17Hack_Sprint_To_Do19TimerViewController", "NSFontAttributeName"]
+- ["C17Hack_Sprint_To_Do19TimerViewController", "Shared"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "String"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "TimeInterval"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "Timer"]
@@ -555,6 +583,7 @@ depends-member:
 - ["C17Hack_Sprint_To_Do19TimerViewController", "secondLabel"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "secondTime"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "seconds"]
+- ["C17Hack_Sprint_To_Do19TimerViewController", "shareData"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "startButton"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "stopButton"]
 - ["C17Hack_Sprint_To_Do19TimerViewController", "timeString"]
@@ -579,6 +608,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
+- ["PSo21UIAppearanceContainer", "Shared"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "TimeInterval"]
 - ["PSo21UIAppearanceContainer", "Timer"]
@@ -603,6 +633,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "secondLabel"]
 - ["PSo21UIAppearanceContainer", "secondTime"]
 - ["PSo21UIAppearanceContainer", "seconds"]
+- ["PSo21UIAppearanceContainer", "shareData"]
 - ["PSo21UIAppearanceContainer", "startButton"]
 - ["PSo21UIAppearanceContainer", "stopButton"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -616,6 +647,7 @@ depends-member:
 - !private ["CSo9UIBarItem", "setTitleTextAttributes"]
 - !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
+- ["PSo18UIContentContainer", "Shared"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "TimeInterval"]
 - ["PSo18UIContentContainer", "Timer"]
@@ -639,6 +671,7 @@ depends-member:
 - ["PSo18UIContentContainer", "secondLabel"]
 - ["PSo18UIContentContainer", "secondTime"]
 - ["PSo18UIContentContainer", "seconds"]
+- ["PSo18UIContentContainer", "shareData"]
 - ["PSo18UIContentContainer", "startButton"]
 - ["PSo18UIContentContainer", "stopButton"]
 - ["PSo18UIContentContainer", "timeString"]
@@ -657,6 +690,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
+- ["PSo18UIFocusEnvironment", "Shared"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "TimeInterval"]
 - ["PSo18UIFocusEnvironment", "Timer"]
@@ -681,6 +715,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "secondLabel"]
 - ["PSo18UIFocusEnvironment", "secondTime"]
 - ["PSo18UIFocusEnvironment", "seconds"]
+- ["PSo18UIFocusEnvironment", "shareData"]
 - ["PSo18UIFocusEnvironment", "startButton"]
 - ["PSo18UIFocusEnvironment", "stopButton"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -698,6 +733,7 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
+- ["CSo11UIResponder", "Shared"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "TimeInterval"]
 - ["CSo11UIResponder", "Timer"]
@@ -724,6 +760,7 @@ depends-member:
 - ["CSo11UIResponder", "secondLabel"]
 - ["CSo11UIResponder", "secondTime"]
 - ["CSo11UIResponder", "seconds"]
+- ["CSo11UIResponder", "shareData"]
 - ["CSo11UIResponder", "startButton"]
 - ["CSo11UIResponder", "stopButton"]
 - !private ["CSo11UIResponder", "text"]
@@ -734,6 +771,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "Int"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
+- ["PSo30UIResponderStandardEditActions", "Shared"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "TimeInterval"]
 - ["PSo30UIResponderStandardEditActions", "Timer"]
@@ -758,6 +796,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "secondLabel"]
 - ["PSo30UIResponderStandardEditActions", "secondTime"]
 - ["PSo30UIResponderStandardEditActions", "seconds"]
+- ["PSo30UIResponderStandardEditActions", "shareData"]
 - ["PSo30UIResponderStandardEditActions", "startButton"]
 - ["PSo30UIResponderStandardEditActions", "stopButton"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -769,6 +808,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
+- ["PSo16UIStateRestoring", "Shared"]
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "TimeInterval"]
 - ["PSo16UIStateRestoring", "Timer"]
@@ -792,6 +832,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "secondLabel"]
 - ["PSo16UIStateRestoring", "secondTime"]
 - ["PSo16UIStateRestoring", "seconds"]
+- ["PSo16UIStateRestoring", "shareData"]
 - ["PSo16UIStateRestoring", "startButton"]
 - ["PSo16UIStateRestoring", "stopButton"]
 - ["PSo16UIStateRestoring", "timeString"]
@@ -802,6 +843,7 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
+- ["PSo18UITraitEnvironment", "Shared"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "TimeInterval"]
 - ["PSo18UITraitEnvironment", "Timer"]
@@ -826,6 +868,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "secondLabel"]
 - ["PSo18UITraitEnvironment", "secondTime"]
 - ["PSo18UITraitEnvironment", "seconds"]
+- ["PSo18UITraitEnvironment", "shareData"]
 - ["PSo18UITraitEnvironment", "startButton"]
 - ["PSo18UITraitEnvironment", "stopButton"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -839,6 +882,7 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
+- ["CSo16UIViewController", "Shared"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "TimeInterval"]
 - ["CSo16UIViewController", "Timer"]
@@ -865,6 +909,7 @@ depends-member:
 - ["CSo16UIViewController", "secondLabel"]
 - ["CSo16UIViewController", "secondTime"]
 - ["CSo16UIViewController", "seconds"]
+- ["CSo16UIViewController", "shareData"]
 - ["CSo16UIViewController", "startButton"]
 - ["CSo16UIViewController", "stopButton"]
 - ["CSo16UIViewController", "timeString"]
@@ -887,6 +932,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "NSFontAttributeName"]
+- ["Ps9_Hashable", "Shared"]
 - !private ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "TimeInterval"]
 - ["Ps9_Hashable", "Timer"]
@@ -918,6 +964,7 @@ depends-member:
 - ["Ps9_Hashable", "secondTime"]
 - ["Ps9_Hashable", "seconds"]
 - !private ["Ps9_Hashable", "setTitleTextAttributes"]
+- ["Ps9_Hashable", "shareData"]
 - ["Ps9_Hashable", "startButton"]
 - ["Ps9_Hashable", "stopButton"]
 - !private ["Ps9_Hashable", "text"]
@@ -990,6 +1037,7 @@ depends-nominal:
 - "V10ObjectiveC8Selector"
 - !private "Ps8Sequence"
 - !private "Ps10SetAlgebra"
+- "C17Hack_Sprint_To_Do6Shared"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
@@ -1052,4 +1100,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "aad726e57165c384426b8b214abba76e"
+interface-hash: "8c1d9d3ed23a5a2fb6d898fdb2efcab3"

@@ -1,9 +1,10 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "c863878f8539cfdfc039c094d6065ce9"
-build_time: [549501435, 247528000]
+build_time: [549505669, 38550000]
 inputs:
-  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/TimerViewController.swift": [549500005, 0]
-  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/ViewController.swift": [549501434, 0]
+  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/TimerViewController.swift": [549505394, 0]
+  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/ViewController.swift": [549505668, 0]
   "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/ItemTableViewCell.swift": [549428213, 0]
   "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/AppDelegate.swift": [548386888, 0]
-  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/LoadingViewController.swift": [549498315, 0]
+  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/shared.swift": [549505173, 0]
+  "/Users/michaelyu/src/ACM_Hack_Project/Hack-Sprint/Hack-Sprint-To-Do/Hack-Sprint-To-Do/LoadingViewController.swift": [549505394, 0]

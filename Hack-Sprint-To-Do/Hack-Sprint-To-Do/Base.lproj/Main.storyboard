@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4mf-Qv-htX">
-                                <rect key="frame" x="0.0" y="12" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="12" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.69702006979999998" green="0.98046875" blue="0.700878322" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -79,7 +79,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qux-cD-joc">
-                                <rect key="frame" x="0.0" y="571" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="615" width="375" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="b95-yf-V13"/>
                                 </constraints>
@@ -158,7 +158,7 @@
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="x8D-vY-QcD">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="LNS-o7-oEp" kind="show" id="k4Q-zG-zDu"/>
+                                                <segue destination="LNS-o7-oEp" kind="show" identifier="toTimerVC" id="k4Q-zG-zDu"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -310,7 +310,7 @@
         <image name="circle.png" width="2208" height="2167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CLQ-bJ-6oy"/>
-        <segue reference="gJG-QT-hMC"/>
+        <segue reference="YM6-L8-Moa"/>
+        <segue reference="aHa-6V-5p4"/>
     </inferredMetricsTieBreakers>
 </document>

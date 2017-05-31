@@ -15,8 +15,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var items: [String] = []
     var times: [Int] = []
     
-    
-    
     @IBOutlet weak var toMenu: UIButton!
     
     @IBOutlet weak var listTV: UITableView!
@@ -28,6 +26,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     let defaults = UserDefaults.standard
+    
+    
+    //so we can share data between VC's
+    var shareData = Shared.shared.chosenMinutes
+
     
     
     
@@ -195,7 +198,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         let start = UITableViewRowAction(style: .normal, title: "Start") { action, index in
-            print("start task button tapped")
+
+            Shared.shared.chosenMinutes = self.times[indexPath.row]
+            print(self.times[indexPath.row])
+            
             
             //segue into next screen
             self.performSegue(withIdentifier: "toLoadingVC", sender: nil)
@@ -205,7 +211,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         start.backgroundColor = UIColor(red: 70.0/255, green: 183.0/255, blue: 220.0/255, alpha: 1.0)
         
         let cancel = UITableViewRowAction(style: .normal, title: "Cancel") { action, index in
-            print("cancel button tapped")
             
             
             //delete the items & times
@@ -222,6 +227,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return [cancel, start]
     }
+    
     
     
     

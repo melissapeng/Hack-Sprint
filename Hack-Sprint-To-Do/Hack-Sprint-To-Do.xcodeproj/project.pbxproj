@@ -13,6 +13,8 @@
 		9812D2A61ECD3348000E2C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9812D2A51ECD3348000E2C85 /* Assets.xcassets */; };
 		9812D2A91ECD3348000E2C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9812D2A71ECD3348000E2C85 /* LaunchScreen.storyboard */; };
 		981A29FE1EDE2AC300827F2F /* BlueGradBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 981A29FD1EDE2AC300827F2F /* BlueGradBar.png */; };
+		981A2A021EDE380900827F2F /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 981A2A011EDE380900827F2F /* facebook.png */; };
+		981A2A041EDE436200827F2F /* shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A2A031EDE436200827F2F /* shared.swift */; };
 		9833DB381EDBCC9000BE1502 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833DB371EDBCC9000BE1502 /* TimerViewController.swift */; };
 		98C9BBD21ED8EBEA004EDD80 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9BBD11ED8EBEA004EDD80 /* ItemTableViewCell.swift */; };
 		98CA6A831EDB9A9300BC52B9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA6A821EDB9A9300BC52B9 /* LoadingViewController.swift */; };
@@ -38,6 +40,8 @@
 		9812D2A81ECD3348000E2C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9812D2AA1ECD3348000E2C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		981A29FD1EDE2AC300827F2F /* BlueGradBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueGradBar.png; sourceTree = "<group>"; };
+		981A2A011EDE380900827F2F /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		981A2A031EDE436200827F2F /* shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shared.swift; sourceTree = "<group>"; };
 		9833DB371EDBCC9000BE1502 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		98C9BBD11ED8EBEA004EDD80 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		98CA6A821EDB9A9300BC52B9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -90,10 +94,12 @@
 				98C9BBD11ED8EBEA004EDD80 /* ItemTableViewCell.swift */,
 				9812D2A21ECD3348000E2C85 /* Main.storyboard */,
 				9833DB371EDBCC9000BE1502 /* TimerViewController.swift */,
+				981A2A031EDE436200827F2F /* shared.swift */,
 				981A29FD1EDE2AC300827F2F /* BlueGradBar.png */,
 				98CE24181EDD13E0003108DB /* circle.png */,
 				98CE241A1EDD15F2003108DB /* STYLEGUIDE */,
 				98CA6A861EDBCA9700BC52B9 /* fb.jpeg */,
+				981A2A011EDE380900827F2F /* facebook.png */,
 				9812D2A51ECD3348000E2C85 /* Assets.xcassets */,
 				9812D2A71ECD3348000E2C85 /* LaunchScreen.storyboard */,
 				9812D2AA1ECD3348000E2C85 /* Info.plist */,
@@ -198,6 +204,7 @@
 				9812D2A91ECD3348000E2C85 /* LaunchScreen.storyboard in Resources */,
 				98CE24271EDD15F2003108DB /* din bold condensed.otf in Resources */,
 				981A29FE1EDE2AC300827F2F /* BlueGradBar.png in Resources */,
+				981A2A021EDE380900827F2F /* facebook.png in Resources */,
 				9812D2A61ECD3348000E2C85 /* Assets.xcassets in Resources */,
 				98CE24261EDD15F2003108DB /* colors.txt in Resources */,
 				98CE24281EDD15F2003108DB /* DIN Light.ttf in Resources */,
@@ -222,6 +229,7 @@
 				9812D2A11ECD3348000E2C85 /* ViewController.swift in Sources */,
 				98C9BBD21ED8EBEA004EDD80 /* ItemTableViewCell.swift in Sources */,
 				9812D29F1ECD3348000E2C85 /* AppDelegate.swift in Sources */,
+				981A2A041EDE436200827F2F /* shared.swift in Sources */,
 				98CA6A831EDB9A9300BC52B9 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
